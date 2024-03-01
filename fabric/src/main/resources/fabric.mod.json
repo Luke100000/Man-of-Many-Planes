@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "man_of_many_planes",
+  "version": "${version}",
+
+  "name": "Man of Many Planes",
+  "description": "A set of additional aircraft with Create support in mind.",
+  "authors": ["Luke100000", "Man of Many Snails"],
+  "contact": {},
+
+  "license": "GNU GPL 3.0",
+  "icon": "icon.png",
+
+  "environment": "*",
+  "entrypoints": {},
+  "mixins": [
+    "man_of_many_planes.mixins.json",
+    "man_of_many_planes-common.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.7",
+    "minecraft": ">=1.19.2"
+  }
+}

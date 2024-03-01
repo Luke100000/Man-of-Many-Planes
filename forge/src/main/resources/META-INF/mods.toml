@@ -1,0 +1,28 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+issueTrackerURL = "https://github.com/Luke100000/Man-of-Many-Planes/issues"
+license = "GPL-3.0-only"
+
+[[mods]]
+modId = "man_of_many_planes"
+version = "${version}"
+displayName = "Man of Many Planes"
+displayURL = "https://www.curseforge.com/minecraft/mc-mods/man-of-many-planes"
+authors = "Luke100000, Man of Many Snails"
+description = "A set of additional aircraft with Create support in mind."
+logoFile = "icon.png"
+itemIcon = "man_of_many_planes:economy_plane"
+
+[[dependencies.man_of_many_planes]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.19.2,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.man_of_many_planes]]
+modId = "forge"
+mandatory = true
+versionRange = "[1,)"
+ordering = "NONE"
+side = "BOTH"
