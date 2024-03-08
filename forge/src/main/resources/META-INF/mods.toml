@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[1,)"
+loaderVersion = "[43,)"
 issueTrackerURL = "https://github.com/Luke100000/Man-of-Many-Planes/issues"
 license = "GPL-3.0-only"
 
@@ -23,6 +23,6 @@ side = "BOTH"
 [[dependencies.man_of_many_planes]]
 modId = "forge"
 mandatory = true
-versionRange = "[1,)"
+versionRange = "[43,)"
 ordering = "NONE"
 side = "BOTH"

@@ -33,7 +33,7 @@ def getAppVersion = { ->
         return stdout.toString().trim()
     } catch (Exception e) {
         println "Warning: ${e.message}, is git installed?"
-        return "dev"
+        return "0.0.1"
     }
 } as Object
 

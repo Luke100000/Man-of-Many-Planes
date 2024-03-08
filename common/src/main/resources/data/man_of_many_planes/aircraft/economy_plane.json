@@ -1,0 +1,54 @@
+{
+  "properties": {
+    "fuel": 0.5,
+    "durability": 1.0,
+    "yawSpeed": 1.5,
+    "pitchSpeed": 2.0,
+    "engineSpeed": 0.03,
+    "pushSpeed": 0.015,
+    "glideFactor": 0.075,
+    "driftDrag": 0.01,
+    "lift": 0.15,
+    "rollFactor": 30.0,
+    "groundPitch": 6.0,
+    "wind": 0.01,
+    "mass": 2.0
+  },
+  "inventorySlots": [
+    {"type": "upgrade", "x": 10, "y": 8},
+    {"type": "upgrade", "x": 10, "y": 32},
+    {"type": "upgrade", "x": 150, "y": 8},
+    {"type": "upgrade", "x": 150, "y": 32},
+    {"type": "boiler", "x": 80, "y": 28},
+    {"type": "inventory", "x": 32, "y": 8, "cols": 2, "rows": 1},
+    {"type": "inventory", "x": 32, "y": 32, "cols": 2, "rows": 1},
+    {"type": "inventory", "x": 110, "y": 8, "cols": 2, "rows": 1},
+    {"type": "inventory", "x": 110, "y": 32, "cols": 2, "rows": 1}
+  ],
+  "weaponMounts": [],
+  "passengerPositions": [
+    [
+      {"x": 0.0, "y": 1.4, "z": 1.6}
+    ],
+    [
+      {"x": 0.0, "y": 1.4, "z": 1.6},
+      {"x": 0.0, "y": 1.6, "z": 0.5}
+    ]
+  ],
+  "boundingBoxes": [
+    {"width": 2.0, "height": 2.4, "x": 2.0, "y": 2.3, "z": 0.0},
+    {"width": 2.0, "height": 2.4, "x": 3.5, "y": 2.3, "z": 0.0},
+    {"width": 2.0, "height": 2.4, "x": 5.0, "y": 2.3, "z": 0.0},
+    {"width": 2.0, "height": 2.4, "x": 6.5, "y": 2.3, "z": 0.0},
+    {"width": 2.0, "height": 2.4, "x": 0.0, "y": 2.3, "z": 0.0},
+    {"width": 2.0, "height": 2.4, "x": -2.0, "y": 2.3, "z": 0.0},
+    {"width": 2.0, "height": 2.4, "x": -3.5, "y": 2.3, "z": 0.0},
+    {"width": 2.0, "height": 2.4, "x": -5.0, "y": 2.3, "z": 0.0},
+    {"width": 2.0, "height": 2.4, "x": -6.5, "y": 2.3, "z": 0.0},
+    {"width": 2.0, "height": 1.5, "x": 0.0, "y": 2.0, "z": -2.0},
+    {"width": 2.0, "height": 1.5, "x": 0.0, "y": 2.0, "z": -3.5},
+    {"width": 2.0, "height": 1.5, "x": 0.0, "y": 2.0, "z": -5.0},
+    {"width": 3.0, "height": 0.2, "x": 0.0, "y": 3.0, "z": -6.0},
+    {"width": 3.0, "height": 0.2, "x": 0.0, "y": 1.5, "z": -5.0}
+  ]
+}

@@ -6,19 +6,30 @@
   "name": "Man of Many Planes",
   "description": "A set of additional aircraft with Create support in mind.",
   "authors": ["Luke100000", "Man of Many Snails"],
-  "contact": {},
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/man-of-many-planes",
+    "sources": "https://github.com/Luke100000/Man-of-Many-Planes",
+    "issues": "https://github.com/Luke100000/Man-of-Many-Planes/issues"
+  },
 
   "license": "GNU GPL 3.0",
   "icon": "icon.png",
 
   "environment": "*",
-  "entrypoints": {},
+  "entrypoints": {
+    "main": [
+      "net.conczin.man_of_many_planes.fabric.ManOfManyPlanesFabric"
+    ],
+    "client": [
+      "net.conczin.man_of_many_planes.fabric.ManOfManyPlanesFabricClient"
+    ]
+  },
   "mixins": [
-    "man_of_many_planes.mixins.json",
-    "man_of_many_planes-common.mixins.json"
+    "man_of_many_planes.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.15.7",
-    "minecraft": ">=1.19.2"
+    "minecraft": ">=1.19.2",
+    "immersive_aircraft": ">=0.7.1"
   }
 }
