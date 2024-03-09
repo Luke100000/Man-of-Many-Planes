@@ -1,9 +1,5 @@
 package net.conczin.man_of_many_planes.entity;
 
-import com.mojang.math.Matrix3f;
-import com.mojang.math.Matrix4f;
-import com.mojang.math.Vector3f;
-import com.mojang.math.Vector4f;
 import immersive_aircraft.entity.AircraftEntity;
 import immersive_aircraft.entity.AirplaneEntity;
 import immersive_aircraft.entity.misc.Trail;
@@ -13,6 +9,10 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
+import org.joml.Matrix3f;
+import org.joml.Matrix4f;
+import org.joml.Vector3f;
+import org.joml.Vector4f;
 
 import java.util.List;
 
@@ -45,7 +45,7 @@ public class EconomyPlaneEntity extends AirplaneEntity {
     public void tick() {
         super.tick();
 
-        if (level.isClientSide) {
+        if (level().isClientSide) {
             if (isWithinParticleRange()) {
                 Matrix4f transform = getVehicleTransform();
                 Matrix3f normalTransform = getVehicleNormalTransform();
@@ -62,7 +62,7 @@ public class EconomyPlaneEntity extends AirplaneEntity {
                     Vector4f p = transformPosition(transform, 0.5f * (tickCount % 2 == 0 ? -1.0f : 1.0f), 2.5f, -2.2f + 0.8f * ((tickCount / 2.0f) % 2));
                     Vector3f vel = transformVector(normalTransform, 0.2f * (tickCount % 2 == 0 ? -1.0f : 1.0f), 0.0f, 0.0f);
                     Vec3 velocity = getDeltaMovement();
-                    level.addParticle(ParticleTypes.LARGE_SMOKE, p.x(), p.y(), p.z(), vel.x() + velocity.x, vel.y() + velocity.y, vel.z() + velocity.z);
+                    level().addParticle(ParticleTypes.LARGE_SMOKE, p.x(), p.y(), p.z(), vel.x() + velocity.x, vel.y() + velocity.y, vel.z() + velocity.z);
                 }
             } else {
                 trails.get(0).add(ZERO_VEC4, ZERO_VEC4, 0.0f);

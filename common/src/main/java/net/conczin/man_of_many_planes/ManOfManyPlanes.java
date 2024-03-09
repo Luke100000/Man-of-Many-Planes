@@ -1,11 +1,12 @@
 package net.conczin.man_of_many_planes;
 
+import immersive_aircraft.Items;
 import immersive_aircraft.cobalt.registration.Registration;
 import immersive_aircraft.entity.AirshipEntity;
 import immersive_aircraft.item.AircraftItem;
 import net.conczin.man_of_many_planes.entity.EconomyPlaneEntity;
 import net.conczin.man_of_many_planes.entity.ScarletBiplaneEntity;
-import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
@@ -47,12 +48,14 @@ public class ManOfManyPlanes {
     }
 
     static Supplier<Item> register(String name, Supplier<Item> item) {
-        return Registration.register(Registry.ITEM, ManOfManyPlanes.locate(name), item);
+        Supplier<Item> register = Registration.register(BuiltInRegistries.ITEM, ManOfManyPlanes.locate(name), item);
+        Items.items.add(register);
+        return register;
     }
 
     static <T extends Entity> Supplier<EntityType<T>> register(String name, EntityType.Builder<T> builder) {
         ResourceLocation id = ManOfManyPlanes.locate(name);
-        return Registration.register(Registry.ENTITY_TYPE, id, () -> builder.build(id.toString()));
+        return Registration.register(BuiltInRegistries.ENTITY_TYPE, id, () -> builder.build(id.toString()));
     }
 
     public static ResourceLocation locate(String name) {
