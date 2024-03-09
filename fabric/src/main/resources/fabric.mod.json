@@ -30,6 +30,6 @@
   "depends": {
     "fabricloader": ">=0.15.7",
     "minecraft": ">=1.19.2",
-    "immersive_aircraft": ">=0.7.1"
+    "immersive_aircraft": ">=0.7.5"
   }
 }
