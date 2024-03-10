@@ -1,6 +1,7 @@
 # 0.0.3
 
 * Aircraft now drop the right item
+* New items (thanks 김작업!)
 
 # 0.0.2
 
