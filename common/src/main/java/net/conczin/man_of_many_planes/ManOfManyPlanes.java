@@ -2,7 +2,6 @@ package net.conczin.man_of_many_planes;
 
 import immersive_aircraft.Items;
 import immersive_aircraft.cobalt.registration.Registration;
-import immersive_aircraft.entity.AirshipEntity;
 import immersive_aircraft.item.AircraftItem;
 import net.conczin.man_of_many_planes.entity.EconomyPlaneEntity;
 import net.conczin.man_of_many_planes.entity.ScarletBiplaneEntity;
@@ -28,8 +27,8 @@ public class ManOfManyPlanes {
 
     public static void init() {
         // Register items
-        SCARLET_BIPLANE_ITEM = register("scarlet_biplane", () -> new AircraftItem(baseProps().stacksTo(1), world -> new AirshipEntity(SCARLET_BIPLANE_ENTITY.get(), world)));
-        ECONOMY_PLANE_ITEM = register("economy_plane", () -> new AircraftItem(baseProps().stacksTo(1), world -> new AirshipEntity(ECONOMY_PLANE_ENTITY.get(), world)));
+        SCARLET_BIPLANE_ITEM = register("scarlet_biplane", () -> new AircraftItem(baseProps().stacksTo(1), world -> new ScarletBiplaneEntity(SCARLET_BIPLANE_ENTITY.get(), world)));
+        ECONOMY_PLANE_ITEM = register("economy_plane", () -> new AircraftItem(baseProps().stacksTo(1), world -> new EconomyPlaneEntity(ECONOMY_PLANE_ENTITY.get(), world)));
 
         // Register entities
         SCARLET_BIPLANE_ENTITY = register("scarlet_biplane", EntityType.Builder

@@ -23,7 +23,7 @@ public class EconomyPlaneEntity extends AirplaneEntity {
 
     @Override
     public Item asItem() {
-        return ManOfManyPlanes.SCARLET_BIPLANE_ITEM.get();
+        return ManOfManyPlanes.ECONOMY_PLANE_ITEM.get();
     }
 
     private final List<Trail> trails = List.of(new Trail(60), new Trail(60), new Trail(30), new Trail(30));

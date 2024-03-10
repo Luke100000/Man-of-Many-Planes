@@ -1,3 +1,7 @@
+# 0.0.3
+
+* Aircraft now drop the right item
+
 # 0.0.2
 
 * Fixed recipes
