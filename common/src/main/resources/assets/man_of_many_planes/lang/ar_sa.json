@@ -1,0 +1,8 @@
+{
+  "item.man_of_many_planes.scarlet_biplane": "الطائرة ذات السطحين القرمزي",
+  "item.man_of_many_planes.scarlet_biplane.description": "طائرة ذات سطحين حمراء نابضة بالحياة، تتيح لك الإبحار في سماء Minecraft بكل سهولة وخفة حركة.",
+  "entity.man_of_many_planes.scarlet_biplane": "الطائرة ذات السطحين القرمزي",
+  "item.man_of_many_planes.economy_plane": "Economy Plane",
+  "item.man_of_many_planes.economy_plane.description": "Build from cheap and lightweight materials, this aircraft is optimized for low fuel consumption at the expense of comfort.",
+  "entity.man_of_many_planes.economy_plane": "Economy Plane"
+}
