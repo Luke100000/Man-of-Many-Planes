@@ -1,6 +1,6 @@
 plugins {
     id "architectury-plugin" version "3.4-SNAPSHOT"
-    id "dev.architectury.loom" version "1.5-SNAPSHOT" apply false
+    id "dev.architectury.loom" version "1.7-SNAPSHOT" apply false
 }
 
 architectury {
@@ -52,11 +52,12 @@ allprojects {
 
     repositories {
         maven { url "https://maven.conczin.net/Artifacts" }
+        maven { url "https://maven.parchmentmc.org" }
         maven { url "https://maven.terraformersmc.com/releases/" }
-        maven { url = "https://dvs1.progwml6.com/files/maven/" }
-        maven { url "<https://maven.shedaniel.me/>" }
-        maven { url "<https://maven.architectury.dev/>" }
-        maven { url = 'https://maven.parchmentmc.org' }
+        maven { url "https://dvs1.progwml6.com/files/maven/" }
+        maven { url "https://maven.shedaniel.me/" }
+        maven { url "https://maven.architectury.dev/" }
+        maven { url "https://maven.parchmentmc.org" }
         maven { url "https://nexus.resourcefulbees.com/repository/maven-public/" }
         maven { url "https://maven.teamresourceful.com/repository/maven-public/" }
         maven { url "https://cursemaven.com" }
@@ -64,7 +65,7 @@ allprojects {
 
     tasks.withType(JavaCompile) {
         options.encoding = "UTF-8"
-        options.release.set(17)
+        options.release.set(21)
     }
 
     java {

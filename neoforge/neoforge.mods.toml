@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[47,)"
+loaderVersion = "[1,)"
 issueTrackerURL = "https://github.com/Luke100000/Man-of-Many-Planes/issues"
 license = "GPL-3.0-only"
 
@@ -16,20 +16,20 @@ itemIcon = "man_of_many_planes:economy_plane"
 [[dependencies.man_of_many_planes]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.20.1,)"
+versionRange = "[@MINECRAFT_VERSION@,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.man_of_many_planes]]
-modId = "forge"
+modId = "neoforge"
 mandatory = true
-versionRange = "[47,)"
+versionRange = "[1,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.man_of_many_planes]]
 modId = "immersive_aircraft"
 mandatory = true
-versionRange = "[1.1.0,)"
+versionRange = "[1.2.2,)"
 ordering = "NONE"
 side = "BOTH"

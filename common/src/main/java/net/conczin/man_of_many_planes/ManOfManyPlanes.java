@@ -58,6 +58,6 @@ public class ManOfManyPlanes {
     }
 
     public static ResourceLocation locate(String name) {
-        return new ResourceLocation(ManOfManyPlanes.MOD_ID, name);
+        return ResourceLocation.fromNamespaceAndPath(ManOfManyPlanes.MOD_ID, name);
     }
 }

@@ -16,8 +16,7 @@ import org.joml.Vector4f;
 
 import java.util.List;
 
-public class ScarletBiplaneEntity extends AirplaneEntity
-{
+public class ScarletBiplaneEntity extends AirplaneEntity {
     public ScarletBiplaneEntity(EntityType<? extends AircraftEntity> entityType, Level world) {
         super(entityType, world, true);
     }

@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "IHI",
-    "PBH",
-    "IHI"
+    "PHS",
+    "GEH",
+    "PHS"
   ],
   "key": {
     "H": [
@@ -11,9 +11,14 @@
         "item": "immersive_aircraft:hull"
       }
     ],
-    "B": [
+    "G": [
       {
-        "item": "immersive_aircraft:biplane"
+        "item": "immersive_aircraft:industrial_gears"
+      }
+    ],
+    "E": [
+      {
+        "item": "immersive_aircraft:engine"
       }
     ],
     "P": [
@@ -21,13 +26,13 @@
         "item": "immersive_aircraft:propeller"
       }
     ],
-    "I": [
+    "S": [
       {
-        "item": "minecraft:iron_ingot"
+        "item": "immersive_aircraft:sail"
       }
     ]
   },
   "result": {
-    "item": "man_of_many_planes:scarlet_biplane"
+    "id": "man_of_many_planes:economy_plane"
   }
 }
