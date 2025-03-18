@@ -25,7 +25,7 @@ dependencies {
     include 'org.mariuszgromada.math:MathParser.org-mXparser:5.2.1'
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
-    shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
+    shadowCommon(project(path: ":common", configuration: "transformProductionNeoForge")) { transitive = false }
 
     modImplementation("net.conczin:immersive_aircraft:${rootProject.immersive_aircraft_version}+neoforge")
 }
