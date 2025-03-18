@@ -1,3 +1,7 @@
+# 0.2.1
+
+* Fixed NeoForge crash
+
 # 0.2.0
 
 * Updated to IA 1.1.0
