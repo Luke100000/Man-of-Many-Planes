@@ -1,8 +1,8 @@
 {
-  "item.man_of_many_planes.scarlet_biplane": "Scarlet Biplane",
-  "item.man_of_many_planes.scarlet_biplane.description": "A vibrant, red biplane, allowing you to navigate the skies of Minecraft with ease and agility.",
-  "entity.man_of_many_planes.scarlet_biplane": "Scarlet Biplane",
-  "item.man_of_many_planes.economy_plane": "Economy Plane",
-  "item.man_of_many_planes.economy_plane.description": "Build from cheap and lightweight materials, this aircraft is optimized for low fuel consumption at the expense of comfort.",
-  "entity.man_of_many_planes.economy_plane": "Economy Plane"
+  "item.man_of_many_planes.scarlet_biplane": "Կարմիր բիպլան",
+  "item.man_of_many_planes.scarlet_biplane.description": "Սենյակային, կարմիր բիպլան, որը թույլ է տալիս հեշտությամբ և ճեխությամբ նավարկել Minecraft-ի երկնքում։",
+  "entity.man_of_many_planes.scarlet_biplane": "Կարմիր բիպլան",
+  "item.man_of_many_planes.economy_plane": "Տնտեսական ինքնաթիռ",
+  "item.man_of_many_planes.economy_plane.description": "Ավելի հեշտ, թեթև նյութերից պատրաստված այս ինքնաթիռը օպտիմիզացված է ցածր վառելիքի սպառման համար, մաքսիմալ հարմարավետության հաշվին։",
+  "entity.man_of_many_planes.economy_plane": "Տնտեսական ինքնաթիռ"
 }
