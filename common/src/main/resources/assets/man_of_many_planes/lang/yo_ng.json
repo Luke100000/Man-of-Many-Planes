@@ -1,8 +1,8 @@
 {
-  "item.man_of_many_planes.scarlet_biplane": "Scarlet Biplane",
-  "item.man_of_many_planes.scarlet_biplane.description": "A vibrant, red biplane, allowing you to navigate the skies of Minecraft with ease and agility.",
-  "entity.man_of_many_planes.scarlet_biplane": "Scarlet Biplane",
-  "item.man_of_many_planes.economy_plane": "Economy Plane",
-  "item.man_of_many_planes.economy_plane.description": "Build from cheap and lightweight materials, this aircraft is optimized for low fuel consumption at the expense of comfort.",
-  "entity.man_of_many_planes.economy_plane": "Economy Plane"
+  "item.man_of_many_planes.scarlet_biplane": "Biplane Pupa",
+  "item.man_of_many_planes.scarlet_biplane.description": "Biplane pupa, ti gbiyanju lati wa ni iyara ni awọn ọkọ ofurufu Minecraft pẹlu irọrun ati agility.",
+  "entity.man_of_many_planes.scarlet_biplane": "Biplane Pupa",
+  "item.man_of_many_planes.economy_plane": "Fọọmu Owo",
+  "item.man_of_many_planes.economy_plane.description": "Ti kọ lati inu awọn ohun elo ti o din owo ati fẹẹrẹ, ọkọ ofurufu yii ni a ti ṣe atunṣe fun iwe epo kekere ni idiyele itunu.",
+  "entity.man_of_many_planes.economy_plane": "Fọọmu Owo"
 }
