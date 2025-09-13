@@ -1,8 +1,8 @@
 {
-  "item.man_of_many_planes.scarlet_biplane": "Scarlet Biplane",
-  "item.man_of_many_planes.scarlet_biplane.description": "A vibrant, red biplane, allowing you to navigate the skies of Minecraft with ease and agility.",
-  "entity.man_of_many_planes.scarlet_biplane": "Scarlet Biplane",
-  "item.man_of_many_planes.economy_plane": "Economy Plane",
-  "item.man_of_many_planes.economy_plane.description": "Build from cheap and lightweight materials, this aircraft is optimized for low fuel consumption at the expense of comfort.",
-  "entity.man_of_many_planes.economy_plane": "Economy Plane"
+  "item.man_of_many_planes.scarlet_biplane": "Scarlat Biplano",
+  "item.man_of_many_planes.scarlet_biplane.description": "Un vibranta, ruza biplano, permettente te navigar la skyes de Minecraft kun facilitate e agilitá.",
+  "entity.man_of_many_planes.scarlet_biplane": "Scarlat Biplano",
+  "item.man_of_many_planes.economy_plane": "Ekonomiko Biplano",
+  "item.man_of_many_planes.economy_plane.description": "Konstruite da cheap e lighte materiales, ti aeroplan es optimizita por bas fuel consumpte a la expense de komforto.",
+  "entity.man_of_many_planes.economy_plane": "Ekonomiko Biplano"
 }
