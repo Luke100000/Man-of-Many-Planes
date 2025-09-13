@@ -1,8 +1,8 @@
 {
-  "item.man_of_many_planes.scarlet_biplane": "Scarlet Biplane",
-  "item.man_of_many_planes.scarlet_biplane.description": "A vibrant, red biplane, allowing you to navigate the skies of Minecraft with ease and agility.",
-  "entity.man_of_many_planes.scarlet_biplane": "Scarlet Biplane",
-  "item.man_of_many_planes.economy_plane": "Economy Plane",
-  "item.man_of_many_planes.economy_plane.description": "Build from cheap and lightweight materials, this aircraft is optimized for low fuel consumption at the expense of comfort.",
-  "entity.man_of_many_planes.economy_plane": "Economy Plane"
+  "item.man_of_many_planes.scarlet_biplane": "Scarlett Biplan",
+  "item.man_of_many_planes.scarlet_biplane.description": "Ein livandi, reyður biplan, ið lætur teg navigera himmalinum í Minecraft við lættvanda og ávøtt.",
+  "entity.man_of_many_planes.scarlet_biplane": "Scarlett Biplan",
+  "item.man_of_many_planes.economy_plane": "Economy Plan",
+  "item.man_of_many_planes.economy_plane.description": "Bygdur av ódýrum og ljósum evnum, henda flúgvarin er optimeraður til lágt brúk av brenniviði á kostnað av komfort.",
+  "entity.man_of_many_planes.economy_plane": "Economy Plan"
 }
