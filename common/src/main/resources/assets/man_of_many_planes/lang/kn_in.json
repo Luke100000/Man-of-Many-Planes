@@ -1,8 +1,8 @@
 {
-  "item.man_of_many_planes.scarlet_biplane": "Scarlet Biplane",
-  "item.man_of_many_planes.scarlet_biplane.description": "A vibrant, red biplane, allowing you to navigate the skies of Minecraft with ease and agility.",
-  "entity.man_of_many_planes.scarlet_biplane": "Scarlet Biplane",
-  "item.man_of_many_planes.economy_plane": "Economy Plane",
-  "item.man_of_many_planes.economy_plane.description": "Build from cheap and lightweight materials, this aircraft is optimized for low fuel consumption at the expense of comfort.",
-  "entity.man_of_many_planes.economy_plane": "Economy Plane"
+  "item.man_of_many_planes.scarlet_biplane": "ಸ್ಕಾರ್ಲೆಟ್ ಬೈಪ್ಲೇನ್",
+  "item.man_of_many_planes.scarlet_biplane.description": "ಊರ್ಜಿತ, ಕೆಂಪು ಬೈಪ್ಲೇನ್, ಇದನ್ನು ಬಳಸಿ ನೀವು ಮೈಕ್ಮಿಂಟ್‌ನ ಆಕಾಶಗಳನ್ನು ಸುಲಭ ಮತ್ತು ಚೆಲುವಾಗಿ ನಾವಿಗೇಟ್ ಮಾಡಬಹುದು.",
+  "entity.man_of_many_planes.scarlet_biplane": "ಸ್ಕಾರ್ಲೆಟ್ ಬೈಪ್ಲೇನ್",
+  "item.man_of_many_planes.economy_plane": "ಅರ್ಥಶಾಸ್ತ್ರ ವಿಮಾನ",
+  "item.man_of_many_planes.economy_plane.description": "ಕೀಳ್ಮಟ್ಟದ ಮತ್ತು ಒದಲು ವಸ್ತುಗಳಿಂದ ನಿರ್ಮಿತವೆಂದು, ಈ ವಿಮಾನವು ಸಂಭವನೀಯ ಹಾಸ್ಯಾಸು ಕ್ಷೇತ್ರದಲ್ಲಿ ಕಾಸ್ಟಳುವಿಕೆ ಅಗತ್ಯಕ್ಕೆ ಹೊಂದಿಸಲಾಗಿದೆ.",
+  "entity.man_of_many_planes.economy_plane": "ಅರ್ಥಶಾಸ್ತ್ರ ವಿಮಾನ"
 }
