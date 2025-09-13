@@ -1,8 +1,8 @@
 {
-  "item.man_of_many_planes.scarlet_biplane": "Scarlet Biplane",
-  "item.man_of_many_planes.scarlet_biplane.description": "A vibrant, red biplane, allowing you to navigate the skies of Minecraft with ease and agility.",
-  "entity.man_of_many_planes.scarlet_biplane": "Scarlet Biplane",
-  "item.man_of_many_planes.economy_plane": "Economy Plane",
-  "item.man_of_many_planes.economy_plane.description": "Build from cheap and lightweight materials, this aircraft is optimized for low fuel consumption at the expense of comfort.",
-  "entity.man_of_many_planes.economy_plane": "Economy Plane"
+  "item.man_of_many_planes.scarlet_biplane": "סקאַרלעט בייפלאַן",
+  "item.man_of_many_planes.scarlet_biplane.description": "אַ ווערטיק, רויט בייפלאַן, וואָס לאָזן דיר צו גרייט וויי אין די הימלס פון מיינקראפט מיט גרעסע און ריידות.",
+  "entity.man_of_many_planes.scarlet_biplane": "סקאַרלעט בייפלאַן",
+  "item.man_of_many_planes.economy_plane": "עקאָנאָמיע פּלאַן",
+  "item.man_of_many_planes.economy_plane.description": "באַבילדען פֿון ביליג און לייטווייט מאַטעריאַלן, דעם פֿלוג איז אָפּטימיזירט פֿאַר נידעריק יזפּאָלצר אויף די קאָסט פֿונעם באַקוועם.",
+  "entity.man_of_many_planes.economy_plane": "עקאָנאָמיע פּלאַן"
 }
