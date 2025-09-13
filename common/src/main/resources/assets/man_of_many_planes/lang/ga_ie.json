@@ -1,8 +1,8 @@
 {
-  "item.man_of_many_planes.scarlet_biplane": "Scarlet Biplane",
-  "item.man_of_many_planes.scarlet_biplane.description": "A vibrant, red biplane, allowing you to navigate the skies of Minecraft with ease and agility.",
-  "entity.man_of_many_planes.scarlet_biplane": "Scarlet Biplane",
-  "item.man_of_many_planes.economy_plane": "Economy Plane",
-  "item.man_of_many_planes.economy_plane.description": "Build from cheap and lightweight materials, this aircraft is optimized for low fuel consumption at the expense of comfort.",
-  "entity.man_of_many_planes.economy_plane": "Economy Plane"
+  "item.man_of_many_planes.scarlet_biplane": "Biplane Scarlach",
+  "item.man_of_many_planes.scarlet_biplane.description": "Biplane dearg, beo, ag ligean duit na spéartha de Minecraft a nascleanúint go héasca agus go tapa.",
+  "entity.man_of_many_planes.scarlet_biplane": "Biplane Scarlach",
+  "item.man_of_many_planes.economy_plane": "Eitilt Eacnamaíoch",
+  "item.man_of_many_planes.economy_plane.description": "Tógtha as ábhair chostas íseal agus éadroma, tá an t-aerárthach seo optamaithe le haghaidh tomhaltais íseal breosla ag chostas compord.",
+  "entity.man_of_many_planes.economy_plane": "Eitilt Eacnamaíoch"
 }
