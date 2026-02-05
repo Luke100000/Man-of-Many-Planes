@@ -1,8 +1,8 @@
 {
   "item.man_of_many_planes.scarlet_biplane": "Алый биплан",
-  "item.man_of_many_planes.scarlet_biplane.description": "Яркий красный биплан, позволяющий вам легко и ман`вренно перемещаться по небесам Minecraft.",
+  "item.man_of_many_planes.scarlet_biplane.description": "Яркий красный биплан, позволяющий легко и манёвренно перемещаться по миру Minecraft.",
   "entity.man_of_many_planes.scarlet_biplane": "Алый биплан",
   "item.man_of_many_planes.economy_plane": "Экономичный самолёт",
-  "item.man_of_many_planes.economy_plane.description": "Построенный из дешёвых и лёгких материалов, этот летательный аппарат оптимизирован для низкого расхода топлива в ущерб комфорту.",
+  "item.man_of_many_planes.economy_plane.description": "Собранный из дешёвых и лёгких материалов, этот летательный аппарат оптимизирован для низкого расхода топлива в ущерб комфорту.",
   "entity.man_of_many_planes.economy_plane": "Экономичный самолёт"
 }
