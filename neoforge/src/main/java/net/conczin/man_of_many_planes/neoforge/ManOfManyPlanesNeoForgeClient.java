@@ -14,7 +14,7 @@ import static immersive_aircraft.ItemColors.getDyeColor;
 public class ManOfManyPlanesNeoForgeClient {
     @SubscribeEvent
     public static void setup(FMLClientSetupEvent event) {
-        ManOfManyPlanesClient.registerEntityRenderer();
+        event.enqueueWork(ManOfManyPlanesClient::registerEntityRenderer);
     }
 
     @SubscribeEvent
