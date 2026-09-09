@@ -1,5 +1,5 @@
 plugins {
-    id "com.github.johnrengelman.shadow" version "7.1.2"
+    id "com.gradleup.shadow" version "9.6.1"
 }
 architectury {
     platformSetupLoomIde()
@@ -15,7 +15,7 @@ configurations {
 }
 
 repositories {
-    maven { url "https://maven.neoforged.net/releases/" }
+    maven { url = "https://maven.neoforged.net/releases/" }
 }
 
 dependencies {
@@ -24,17 +24,19 @@ dependencies {
     forgeRuntimeLibrary 'org.mariuszgromada.math:MathParser.org-mXparser:5.2.1'
     include 'org.mariuszgromada.math:MathParser.org-mXparser:5.2.1'
 
-    common(project(path: ":common", configuration: "namedElements")) { transitive false }
+    common(project(path: ":common", configuration: "namedElements")) { transitive = false }
     shadowCommon(project(path: ":common", configuration: "transformProductionNeoForge")) { transitive = false }
 
     modImplementation("net.conczin:immersive_aircraft:${rootProject.immersive_aircraft_version}+neoforge")
 }
 
+def modVersion = project.version
+
 processResources {
-    inputs.property "version", project.version
+    inputs.property "version", modVersion
 
     filesMatching("META-INF/neoforge.mods.toml") {
-        expand "version": project.version
+        expand "version": modVersion
     }
 }
 
