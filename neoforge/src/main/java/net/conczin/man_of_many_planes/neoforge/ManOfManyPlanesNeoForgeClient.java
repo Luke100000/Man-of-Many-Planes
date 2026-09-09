@@ -5,7 +5,7 @@ import net.conczin.man_of_many_planes.ManOfManyPlanesClient;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 
 import static immersive_aircraft.ItemColors.getDyeColor;
@@ -13,7 +13,7 @@ import static immersive_aircraft.ItemColors.getDyeColor;
 @EventBusSubscriber(modid = ManOfManyPlanes.MOD_ID, value = Dist.CLIENT, bus = EventBusSubscriber.Bus.MOD)
 public class ManOfManyPlanesNeoForgeClient {
     @SubscribeEvent
-    public static void setup(FMLClientSetupEvent event) {
+    public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
         ManOfManyPlanesClient.registerEntityRenderer();
     }
 
