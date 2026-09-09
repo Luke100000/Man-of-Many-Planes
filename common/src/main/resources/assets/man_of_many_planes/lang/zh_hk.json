@@ -1,8 +1,8 @@
 {
-  "item.man_of_many_planes.scarlet_biplane": "Scarlet Biplane",
-  "item.man_of_many_planes.scarlet_biplane.description": "A vibrant, red biplane, allowing you to navigate the skies of Minecraft with ease and agility.",
-  "entity.man_of_many_planes.scarlet_biplane": "Scarlet Biplane",
-  "item.man_of_many_planes.economy_plane": "Economy Plane",
-  "item.man_of_many_planes.economy_plane.description": "Build from cheap and lightweight materials, this aircraft is optimized for low fuel consumption at the expense of comfort.",
-  "entity.man_of_many_planes.economy_plane": "Economy Plane"
+  "item.man_of_many_planes.scarlet_biplane": "血色雙翼機",
+  "item.man_of_many_planes.scarlet_biplane.description": "充滿活力的紅色雙翼飛機，讓您輕鬆靈活地遨遊 Minecraft 的天空。",
+  "entity.man_of_many_planes.scarlet_biplane": "血色雙翼機",
+  "item.man_of_many_planes.economy_plane": "經濟客機",
+  "item.man_of_many_planes.economy_plane.description": "這款飛機採用廉價且輕量的材料製造，在犧牲舒適度的同時，也達到低油耗的最佳化。",
+  "entity.man_of_many_planes.economy_plane": "經濟客機"
 }

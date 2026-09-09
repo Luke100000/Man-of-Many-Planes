@@ -1,8 +1,8 @@
 {
-  "item.man_of_many_planes.scarlet_biplane": "Scarlet Biplane",
-  "item.man_of_many_planes.scarlet_biplane.description": "A vibrant, red biplane, allowing you to navigate the skies of Minecraft with ease and agility.",
-  "entity.man_of_many_planes.scarlet_biplane": "Scarlet Biplane",
-  "item.man_of_many_planes.economy_plane": "Economy Plane",
-  "item.man_of_many_planes.economy_plane.description": "Build from cheap and lightweight materials, this aircraft is optimized for low fuel consumption at the expense of comfort.",
-  "entity.man_of_many_planes.economy_plane": "Economy Plane"
+  "item.man_of_many_planes.scarlet_biplane": "Núta Bipláneo",
+  "item.man_of_many_planes.scarlet_biplane.description": "Núta bipláneo, caure vára, ér alcarin i miressë míne Mincraft e cé a i vëa.",
+  "entity.man_of_many_planes.scarlet_biplane": "Núta Bipláneo",
+  "item.man_of_many_planes.economy_plane": "Cáno Plane",
+  "item.man_of_many_planes.economy_plane.description": "Nóren i hauta ar caure meldo, estta i hlarwa a queti i mál.",
+  "entity.man_of_many_planes.economy_plane": "Cáno Plane"
 }

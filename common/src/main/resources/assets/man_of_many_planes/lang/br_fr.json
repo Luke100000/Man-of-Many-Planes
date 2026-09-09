@@ -1,8 +1,8 @@
 {
-  "item.man_of_many_planes.scarlet_biplane": "Scarlet Biplane",
-  "item.man_of_many_planes.scarlet_biplane.description": "A vibrant, red biplane, allowing you to navigate the skies of Minecraft with ease and agility.",
-  "entity.man_of_many_planes.scarlet_biplane": "Scarlet Biplane",
-  "item.man_of_many_planes.economy_plane": "Economy Plane",
-  "item.man_of_many_planes.economy_plane.description": "Build from cheap and lightweight materials, this aircraft is optimized for low fuel consumption at the expense of comfort.",
-  "entity.man_of_many_planes.economy_plane": "Economy Plane"
+  "item.man_of_many_planes.scarlet_biplane": "Biplan scarlet",
+  "item.man_of_many_planes.scarlet_biplane.description": "Ur biplan e ruz, leun a gouloù, a c'hall da vont da zougen an neñv gant aesder ha graf.",
+  "entity.man_of_many_planes.scarlet_biplane": "Biplan scarlet",
+  "item.man_of_many_planes.economy_plane": "Biplan ekonomikel",
+  "item.man_of_many_planes.economy_plane.description": "Krouet eus materialioù krampouezh ha leun, ar binig-se a zo a laver da vezañ gwelloc'h evit implij kouskel ha m'en em goll p'in em goll d'an drouiz.",
+  "entity.man_of_many_planes.economy_plane": "Biplan ekonomikel"
 }
