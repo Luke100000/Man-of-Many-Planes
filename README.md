@@ -5,5 +5,8 @@
 
 # Licence
 
-This repo is licenced under the [CC0 Licence](https://creativecommons.org/public-domain/cc0/), excluding textures and bbmodel files.
-You may use this repo as a base or reference for own addons.
+This repos `code` is licenced under the [CC0 License](https://creativecommons.org/public-domain/cc0/), and it is
+encouraged to be used as reference or base for own addons.
+
+The assets (aircraft model and texture) are licenced under
+the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en).
