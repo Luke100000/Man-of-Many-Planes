@@ -14,12 +14,13 @@ jobs:
       MAVEN_TOKEN: ${{ secrets.MAVEN_TOKEN }}
     steps:
       - name: Checkout Commit
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Fetch Tags
         run: git fetch --unshallow --tags
       - name: Set up JDK 17
-        uses: actions/setup-java@v1
+        uses: actions/setup-java@v4
         with:
+          distribution: temurin
           java-version: 17
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
@@ -29,24 +30,29 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
-      CURSEFORGE_TOKEN: ${{ secrets.CURSEFORGE_TOKEN }}
+      MODRINTH_ID: ${{ vars.MODRINTH_ID }}
+      MODRINTH_TOKEN: ${{ secrets.MR_API_TOKEN }}
+      CURSEFORGE_ID: ${{ vars.CURSEFORGE_ID }}
+      CURSEFORGE_TOKEN: ${{ secrets.CF_API_TOKEN }}
+      MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
+      MAVEN_TOKEN: ${{ secrets.MAVEN_TOKEN }}
     if: startsWith(github.ref, 'refs/tags/')
     steps:
       - name: Checkout Commit
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Fetch Tags
         run: git fetch --unshallow --tags
       - name: Set up JDK 17
-        uses: actions/setup-java@v1
+        uses: actions/setup-java@v4
         with:
+          distribution: temurin
           java-version: 17
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
-      - name: Build with Gradle - Forge
-        run: ./gradlew :forge:build
-      - name: Build with Gradle - Fabric
-        run: ./gradlew :fabric:build
+      - name: Build with Gradle
+        run: ./gradlew build
+      - name: Publish to Maven
+        run: ./gradlew publish
       - name: Get tag
         if: ${{ success() && startsWith(github.ref, 'refs/tags/') }}
         id: tag
@@ -61,12 +67,12 @@ jobs:
       - name: "Rename Forge files"
         run: mv "forge/build/libs/man_of_many_planes-${{steps.tag.outputs.tag}}.jar" "forge/build/libs/man_of_many_planes-${{steps.tag.outputs.tag}}-forge.jar"
       - name: "Upload Fabric"
-        uses: Kir-Antipov/mc-publish@v3.3.0
+        uses: Kira-NT/mc-publish@v3
         if: ${{ success() && startsWith(github.ref, 'refs/tags/') }}
         with:
-          modrinth-id: 9qdTHi0q
+          modrinth-id: ${{ env.MODRINTH_ID }}
           modrinth-token: ${{ env.MODRINTH_TOKEN }}
-          curseforge-id: 984493
+          curseforge-id: ${{ env.CURSEFORGE_ID }}
           curseforge-token: ${{ env.CURSEFORGE_TOKEN }}
 
           name: "[Fabric ${{steps.split.outputs._1}}] Man of Many Planes - ${{steps.split.outputs._0}}"
@@ -84,12 +90,12 @@ jobs:
 
           fail-mode: skip
       - name: "Upload Forge"
-        uses: Kir-Antipov/mc-publish@v3.3.0
+        uses: Kira-NT/mc-publish@v3
         if: ${{ success() && startsWith(github.ref, 'refs/tags/') }}
         with:
-          modrinth-id: 9qdTHi0q
+          modrinth-id: ${{ env.MODRINTH_ID }}
           modrinth-token: ${{ env.MODRINTH_TOKEN }}
-          curseforge-id: 984493
+          curseforge-id: ${{ env.CURSEFORGE_ID }}
           curseforge-token: ${{ env.CURSEFORGE_TOKEN }}
 
           name: "[Forge ${{steps.split.outputs._1}}] Man of Many Planes - ${{steps.split.outputs._0}}"
