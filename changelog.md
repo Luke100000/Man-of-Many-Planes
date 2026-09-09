@@ -1,6 +1,10 @@
-# 0.2.1
+# 0.2.2
 
 * Fixed NeoForge crash
+* Updated translations
+
+# 0.2.1
+
 * Updated translations
 
 # 0.2.0
