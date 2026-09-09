@@ -1,8 +1,8 @@
 {
-  "item.man_of_many_planes.scarlet_biplane": "Scarlet Biplane",
-  "item.man_of_many_planes.scarlet_biplane.description": "A vibrant, red biplane, allowing you to navigate the skies of Minecraft with ease and agility.",
-  "entity.man_of_many_planes.scarlet_biplane": "Scarlet Biplane",
-  "item.man_of_many_planes.economy_plane": "Economy Plane",
-  "item.man_of_many_planes.economy_plane.description": "Build from cheap and lightweight materials, this aircraft is optimized for low fuel consumption at the expense of comfort.",
-  "entity.man_of_many_planes.economy_plane": "Economy Plane"
+  "item.man_of_many_planes.scarlet_biplane": "هواپیمای دوباله قرمز",
+  "item.man_of_many_planes.scarlet_biplane.description": "یک هواپیمای دوباله قرمز رنگ و پر جان که به شما امکان می‌دهد با آسانی و چالاکی در آسمان‌های بازی Minecraft پرواز کنید.",
+  "entity.man_of_many_planes.scarlet_biplane": "هواپیمای دوباله قرمز",
+  "item.man_of_many_planes.economy_plane": "هواپیمای اقتصادی",
+  "item.man_of_many_planes.economy_plane.description": "ساخته شده از مواد ارزان و سبک‌وزن، این هواپیما برای مصرف سوخت کم بهینه‌سازی شده است اما در عوض راحتی کمتری دارد.",
+  "entity.man_of_many_planes.economy_plane": "هواپیمای اقتصادی"
 }
