@@ -6,31 +6,11 @@
     "PHS"
   ],
   "key": {
-    "H": [
-      {
-        "item": "immersive_aircraft:hull"
-      }
-    ],
-    "G": [
-      {
-        "item": "immersive_aircraft:industrial_gears"
-      }
-    ],
-    "E": [
-      {
-        "item": "immersive_aircraft:engine"
-      }
-    ],
-    "P": [
-      {
-        "item": "immersive_aircraft:propeller"
-      }
-    ],
-    "S": [
-      {
-        "item": "immersive_aircraft:sail"
-      }
-    ]
+    "H": "immersive_aircraft:hull",
+    "G": "immersive_aircraft:industrial_gears",
+    "E": "immersive_aircraft:engine",
+    "P": "immersive_aircraft:propeller",
+    "S": "immersive_aircraft:sail"
   },
   "result": {
     "id": "man_of_many_planes:economy_plane"

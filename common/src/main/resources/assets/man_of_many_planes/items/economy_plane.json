@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "man_of_many_planes:item/economy_plane",
+    "tints": [
+      {
+        "type": "minecraft:dye",
+        "default": [1.0, 1.0, 1.0]
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "man_of_many_planes:item/scarlet_biplane",
+    "tints": [
+      {
+        "type": "minecraft:dye",
+        "default": [0.937, 0.137, 0.137]
+      }
+    ]
+  }
+}

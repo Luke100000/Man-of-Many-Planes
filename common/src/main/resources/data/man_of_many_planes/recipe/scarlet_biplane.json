@@ -6,26 +6,10 @@
     "IHI"
   ],
   "key": {
-    "H": [
-      {
-        "item": "immersive_aircraft:hull"
-      }
-    ],
-    "B": [
-      {
-        "item": "immersive_aircraft:biplane"
-      }
-    ],
-    "P": [
-      {
-        "item": "immersive_aircraft:propeller"
-      }
-    ],
-    "I": [
-      {
-        "item": "minecraft:iron_ingot"
-      }
-    ]
+    "H": "immersive_aircraft:hull",
+    "B": "immersive_aircraft:biplane",
+    "P": "immersive_aircraft:propeller",
+    "I": "minecraft:iron_ingot"
   },
   "result": {
     "id": "man_of_many_planes:scarlet_biplane"

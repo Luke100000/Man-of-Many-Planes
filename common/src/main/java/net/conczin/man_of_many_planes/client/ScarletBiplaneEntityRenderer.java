@@ -6,10 +6,10 @@ import immersive_aircraft.entity.AircraftEntity;
 import net.conczin.man_of_many_planes.ManOfManyPlanes;
 import net.conczin.man_of_many_planes.entity.ScarletBiplaneEntity;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 public class ScarletBiplaneEntityRenderer extends AircraftEntityRenderer<ScarletBiplaneEntity> {
-    private static final ResourceLocation ID = ManOfManyPlanes.locate("scarlet_biplane");
+    private static final Identifier ID = ManOfManyPlanes.locate("scarlet_biplane");
 
     private final ModelPartRenderHandler<ScarletBiplaneEntity> model = new ModelPartRenderHandler<ScarletBiplaneEntity>()
             .add("dyed_body", (model, object, vertexConsumerProvider, entity, matrixStack, light, time, modelPartRenderer) ->
@@ -18,7 +18,7 @@ public class ScarletBiplaneEntityRenderer extends AircraftEntityRenderer<Scarlet
                     renderDyed(model, object, vertexConsumerProvider, entity, matrixStack, light, time, true, false));
 
     @Override
-    protected ResourceLocation getModelId() {
+    protected Identifier getModelId() {
         return ID;
     }
 
