@@ -1,3 +1,7 @@
+# 0.2.3
+
+* Updated to Immersive Aircraft 1.6.x
+
 # 0.2.2
 
 * Fixed NeoForge crash
