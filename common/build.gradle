@@ -1,22 +1,31 @@
+plugins {
+    id 'multiloader-common'
+    id 'net.neoforged.moddev'
+}
+
+neoForge {
+    neoFormVersion = neo_form_version
+}
+
 dependencies {
-    // We depend on fabric loader here to use the fabric @Environment annotations and get the mixin dependencies
-    // Do NOT use other classes from fabric loader
-    modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"
-
-    modImplementation("net.conczin:immersive_aircraft:${rootProject.immersive_aircraft_version}+common")
-}
-
-architectury {
-    common("fabric", "neoforge")
-}
-
-publishing {
-    publications {
-        mavenCommon(MavenPublication) {
-            artifactId = rootProject.archives_base_name
-            groupId = rootProject.group_id
-            version = version + "+common"
-            from components.java
-        }
+    // The NeoForge artifact uses Mojang mappings; the common artifact uses intermediary.
+    compileOnly("net.conczin:immersive_aircraft:${immersive_aircraft_version}+neoforge") {
+        transitive = false
     }
+}
+
+configurations {
+    commonJava {
+        canBeResolved = false
+        canBeConsumed = true
+    }
+    commonResources {
+        canBeResolved = false
+        canBeConsumed = true
+    }
+}
+
+artifacts {
+    commonJava sourceSets.main.java.sourceDirectories.singleFile
+    commonResources sourceSets.main.resources.sourceDirectories.singleFile
 }

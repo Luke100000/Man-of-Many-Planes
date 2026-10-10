@@ -121,3 +121,6 @@ run/
 
 
 page
+
+# Local mapped dependency sources
+.sources/

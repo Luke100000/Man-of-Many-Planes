@@ -13,7 +13,7 @@
   },
 
   "license": "GNU GPL 3.0",
-  "icon": "icon.png",
+  "icon": "icon.jpg",
 
   "environment": "*",
   "entrypoints": {
@@ -28,8 +28,10 @@
     "man_of_many_planes.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.15.7",
-    "minecraft": ">=1.21.1",
-    "immersive_aircraft": ">=1.2.2"
+    "fabricloader": ">=${fabric_loader_version}",
+    "minecraft": "${minecraft_version}",
+    "java": ">=${java_version}",
+    "fabric-api": "*",
+    "immersive_aircraft": ">=${immersive_aircraft_min_version}"
   }
 }

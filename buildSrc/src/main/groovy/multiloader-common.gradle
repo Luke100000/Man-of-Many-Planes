@@ -1,0 +1,85 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
+
+base {
+    archivesName = rootProject.archives_base_name
+}
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(java_version)
+    withSourcesJar()
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = "UTF-8"
+    options.release = Integer.parseInt(java_version)
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url = "https://maven.conczin.net/Artifacts"
+        content { includeGroup "net.conczin" }
+    }
+}
+
+['apiElements', 'runtimeElements', 'sourcesElements'].each { variant ->
+    configurations.named(variant) {
+        outgoing.capability("${project.group}:${rootProject.archives_base_name}-${project.name}:${project.version}")
+    }
+    publishing.publications.configureEach {
+        suppressPomMetadataWarningsFor(variant)
+    }
+}
+
+def exclusionPatterns = ['**/*.aup3', '**/.xdp-*', '**/*.kra', '**/*~*']
+
+processResources {
+    exclusionPatterns.each { pattern ->
+        exclude pattern
+    }
+
+    def expandProps = [
+            version: project.version,
+            minecraft_version: minecraft_version,
+            minecraft_version_range: minecraft_version_range,
+            java_version: java_version,
+            fabric_loader_version: fabric_loader_version,
+            neoforge_version: neoforge_version,
+            neoforge_loader_version_range: neoforge_loader_version_range,
+            immersive_aircraft_min_version: immersive_aircraft_min_version
+    ]
+    inputs.properties(expandProps)
+
+    filesMatching(['fabric.mod.json', 'META-INF/neoforge.mods.toml']) {
+        expand expandProps
+    }
+}
+
+sourcesJar {
+    exclusionPatterns.each { pattern ->
+        exclude pattern
+    }
+}
+
+publishing {
+    publications {
+        mavenCommon(MavenPublication) {
+            artifactId = rootProject.archives_base_name
+            version = "${project.version}+${project.name}"
+            from components.java
+        }
+    }
+    repositories {
+        maven {
+            name = "reposiliteRepository"
+            url = uri("https://maven.conczin.net/Artifacts")
+            credentials {
+                username = System.getenv("MAVEN_USERNAME")
+                password = System.getenv("MAVEN_TOKEN")
+            }
+        }
+    }
+}
