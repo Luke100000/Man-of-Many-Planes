@@ -8,14 +8,14 @@ import immersive_aircraft.resources.bbmodel.BBObject;
 import net.conczin.man_of_many_planes.ManOfManyPlanes;
 import net.conczin.man_of_many_planes.entity.EconomyPlaneEntity;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 import java.util.Random;
 
 import static immersive_aircraft.client.render.entity.renderer.utils.BBModelRenderer.renderObject;
 
 public class EconomyPlaneEntityRenderer extends AircraftEntityRenderer<EconomyPlaneEntity> {
-    private static final ResourceLocation ID = ManOfManyPlanes.locate("economy_plane");
+    private static final Identifier ID = ManOfManyPlanes.locate("economy_plane");
 
     private final Random random = new Random();
 
@@ -40,7 +40,7 @@ public class EconomyPlaneEntityRenderer extends AircraftEntityRenderer<EconomyPl
 
 
     @Override
-    protected ResourceLocation getModelId() {
+    protected Identifier getModelId() {
         return ID;
     }
 

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_dye",
+  "category": "misc",
+  "target": "man_of_many_planes:scarlet_biplane",
+  "dye": "#minecraft:dyes",
+  "result": {
+    "id": "man_of_many_planes:scarlet_biplane"
+  }
+}

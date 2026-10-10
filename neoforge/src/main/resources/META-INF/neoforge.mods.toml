@@ -10,7 +10,7 @@ displayName = "Man of Many Planes"
 displayURL = "https://www.curseforge.com/minecraft/mc-mods/man-of-many-planes"
 authors = "Luke100000, Man of Many Snails"
 description = "A set of additional aircraft with Create support in mind."
-logoFile = "icon.png"
+iconFile = "icon.png"
 itemIcon = "man_of_many_planes:economy_plane"
 
 [[dependencies.man_of_many_planes]]

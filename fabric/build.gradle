@@ -1,15 +1,14 @@
 plugins {
     id 'multiloader-loader'
-    id 'fabric-loom'
+    id 'net.fabricmc.fabric-loom'
 }
 
 dependencies {
     minecraft "com.mojang:minecraft:${minecraft_version}"
-    mappings loom.officialMojangMappings()
-    modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
-    modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_api_version}+${minecraft_version}"
+    implementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
+    implementation "net.fabricmc.fabric-api:fabric-api:${fabric_api_version}+${minecraft_version}"
 
-    modImplementation("net.conczin:immersive_aircraft:${immersive_aircraft_version}+fabric") {
+    implementation("net.conczin:immersive_aircraft:${immersive_aircraft_version}+fabric") {
         transitive = false
     }
 
@@ -24,6 +23,7 @@ loom {
             setConfigName('Fabric Client')
             ideConfigGenerated(true)
             runDir('run/client')
+            vmArg '-Xmx3G'
         }
         server {
             server()
@@ -31,6 +31,7 @@ loom {
             ideConfigGenerated(true)
             runDir('run/server')
             programArg '--nogui'
+            vmArg '-Xmx3G'
         }
     }
 }

@@ -45,7 +45,7 @@ public class EconomyPlaneEntity extends AirplaneEntity {
     public void tick() {
         super.tick();
 
-        if (level().isClientSide) {
+        if (level().isClientSide()) {
             if (isWithinParticleRange()) {
                 Matrix4f transform = getVehicleTransform();
                 Matrix3f normalTransform = getVehicleNormalTransform();

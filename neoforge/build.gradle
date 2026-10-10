@@ -9,6 +9,7 @@ neoForge {
         configureEach {
             ideName = "NeoForge ${it.name.capitalize()} (${project.path})"
             gameDirectory = file("run/${it.name}")
+            jvmArgument '-Xmx3G'
         }
         client {
             client()
